@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  microsoft-graph-notification-server-example:
+    build: .
+    command: npm run start:prod
+    ports:
+      - 7000
+  localtunnel:
+    image: 'efrecon/localtunnel:latest'
+    restart: always
+    command: lt --local-host  microsoft-graph-notification-server-example --port 7000
+    depends_on:
+      - microsoft-graph-notification-server-example

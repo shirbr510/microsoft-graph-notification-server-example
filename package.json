@@ -1,0 +1,18 @@
+{
+  "name": "microsoft-graph-notification-server-example",
+  "version": "1.0.0",
+  "description": "a minimal example of a notification service to receive notifications from Microsoft Graph subscriptions",
+  "main": "index.js",
+  "scripts": {
+    "start:watch": "nodemon index.js",
+    "start:prod": "node index.js"
+  },
+  "author": "Shir Brass <shirbr510@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
